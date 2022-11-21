@@ -1,0 +1,43 @@
+* {
+
+}
+
+form {
+    background: #1b1b1b;
+    width: 40vw;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10vh;
+    height: 50vh;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 20px;
+    align-items: center;
+}
+form input,
+button {
+    width: 400px;
+    height: 40px;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+form h3 {
+    color:  white;
+}
+form input {
+    padding-left: 20px;
+}
+form button:hover {
+    background: #9d9d9d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

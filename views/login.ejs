@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/login.css">
+  <title>Login | Node Auth</title>
+
+
+</head>
+
+<body>
+  <%- include('partials/landingHeader.ejs')%>
+
+
+    <form action="/login" method="POST">
+      <h3>Login</h3>
+      <input type="email" name="email" placeholder="Email"/>
+      <input type="password" name="password" placeholder="Password"/>
+      <button>Login</button>
+      <a href="/register">Sign Up</a>
+
+    </form>
+</body>
+
+</html>
