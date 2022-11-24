@@ -2,7 +2,7 @@
 
 }
 
-form {
+#login-form {
     background: #1b1b1b;
     width: 40vw;
     height: fit-content;
@@ -18,21 +18,21 @@ form {
     border-radius: 20px;
     align-items: center;
 }
-form input,
-button {
+#login-form input,
+#login-form button {
     width: 400px;
     height: 40px;
     margin: 5px;
     box-sizing: border-box;
     border-radius: 5px;
 }
-form h3 {
+#login-form h3 {
     color:  white;
 }
-form input {
+#login-form input {
     padding-left: 20px;
 }
-form button:hover {
+#login-form button:hover {
     background: #9d9d9d;
 }
 

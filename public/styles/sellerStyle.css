@@ -1,0 +1,91 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sales-report-container {
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.date-filter {
+    background: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+#filter-btn {
+    background: orangered;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+}
+#filter-btn:hover {
+    box-shadow: 0px 3px 2px 0px gray;
+    transform: translateY(-1px);
+    border: 1px solid white;
+}
+#filter-btn:active {
+    background: gray;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+
+    box-shadow: none;
+    transform: translateY(1px);
+    border: none;
+}
+#table-cols-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.table-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.table-col {
+    width: 100%;
+    min-width: fit-content;
+    height: fit-content;
+    border: 1px solid gray;
+}
+.table-header {
+    background: #1b1b1b;
+    color: white;
+}
+.table-cell {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+#sales-report-footer {
+    position: fixed;
+    bottom: 0;
+    width: 90vw;
+    background: rgb(99, 99, 99);
+    color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+#sales-report-footer #overall-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}

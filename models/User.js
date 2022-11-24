@@ -18,10 +18,6 @@ const userSchema = new Schema({
     usertype: {
         type: String,
         required: true
-    },
-    cart: {
-        type: Array,
-        required: true
     }
 });
 

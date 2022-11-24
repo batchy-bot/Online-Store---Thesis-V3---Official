@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/sellerStyle.css">
+    <title>Seller</title>
+</head>
+
+<body>
+    <%- include('partials/landingHeader.ejs')%>
+
+        <div id="sales-report-container">
+            <h2 id="table-title">SALES REPORT</h2>
+            <div id="table-filter-container">
+                <label for="date-select">FROM: </label>
+                <select name="date-from" class="date-filter">
+                    <option value="">13/11/22</option>
+                </select>
+
+                <label for="date-select">TO: </label>
+                <select name="date-to" class="date-filter">
+                    <option value="">13/11/22</option>
+                </select>
+
+                <button id="filter-btn">Filter</button>
+            </div>
+            <div id="table-cols-container">
+                <div class="table-col">
+                    <span class="table-header">Order No.</span>
+                    <span class="table-cell">1</span>
+                    <span class="table-cell">2</span>
+                    <span class="table-cell">3</span>
+                    <span class="table-cell">4</span>
+                </div>
+
+                <div class="table-col">
+                    <span class="table-header">Date</span>
+                    <span class="table-cell">13/11/22</span>
+                    <span class="table-cell">15/11/22</span>
+                    <span class="table-cell">17/11/22</span>
+                    <span class="table-cell">20/11/22</span>
+                </div>
+
+                <div class="table-col">
+                    <span class="table-header">Product Name</span>
+                    <span class="table-cell">Dressed Chicken</span>
+                    <span class="table-cell">Dressed Chicken</span>
+                    <span class="table-cell">Dressed Chicken</span>
+                    <span class="table-cell">Dressed Chicken</span>
+                </div>
+
+                <div class="table-col">
+                    <span class="table-header">Price</span>
+                    <span class="table-cell">P 170.00</span>
+                    <span class="table-cell">P 170.00</span>
+                    <span class="table-cell">P 170.00</span>
+                    <span class="table-cell">P 170.00</span>
+                </div>
+
+                <div class="table-col">
+                    <span class="table-header quantity-cell">Quantity</span>
+                    <span class="table-cell quantity-cell">3</span>
+                    <span class="table-cell quantity-cell">1</span>
+                    <span class="table-cell quantity-cell">4</span>
+                    <span class="table-cell quantity-cell">5</span>
+                </div>
+
+                <div class="table-col">
+                    <span class="table-header">Total</span>
+                    <span class="table-cell total-cell">P 510.00</span>
+                    <span class="table-cell total-cell">P 170.00</span>
+                    <span class="table-cell total-cell">P 680.00</span>
+                    <span class="table-cell total-cell">P 850.00</span>
+                </div>
+            </div>
+            <div id="sales-report-footer">
+
+                <div id="overall-price">P500.00</div>
+                <h4>TOTAL SALES: </h4>
+            </div>
+        </div>
+
+        <script src="/scripts/seller.js"></script>
+</body>
+
+</html>
